@@ -1,6 +1,6 @@
 // src/App.tsx (REVISI FINAL - URL Gambar Sesuai Tema)
 
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 // Import semua komponen yang dibutuhkan
 import Navbar from './components/Navbar';
