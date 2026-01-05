@@ -1,3 +1,5 @@
+// src/components/HeroVideo.tsx
+
 import React from 'react';
 
 const HeroVideo: React.FC = () => {
@@ -7,17 +9,19 @@ const HeroVideo: React.FC = () => {
         autoPlay
         muted
         loop
-        playsInline
+        playsInline // Penting untuk mobile (iOS) agar tidak fullscreen otomatis
         className="absolute top-0 left-0 w-full h-full object-cover opacity-90"
       >
-        {/* Video Interior Aesthetic Free License */}
         <source src="https://videos.pexels.com/video-files/7578544/7578544-uhd_2560_1440_30fps.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
-        <h1 className="text-5xl md:text-7xl font-serif mb-4 tracking-widest text-shadow">NEW COLLECTION</h1>
-        <button className="border border-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10 p-4 text-center">
+        {/* REVISI: text-4xl di mobile, text-7xl di desktop */}
+        <h1 className="text-4xl md:text-7xl font-serif mb-6 md:mb-4 tracking-widest text-shadow leading-tight">
+            NEW COLLECTION
+        </h1>
+        <button className="border border-white px-6 py-3 md:px-8 md:py-3 text-xs md:text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300">
           Discover
         </button>
       </div>
