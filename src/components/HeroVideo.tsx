@@ -12,7 +12,7 @@ const HeroVideo: React.FC = () => {
         playsInline // Penting untuk mobile (iOS) agar tidak fullscreen otomatis
         className="absolute top-0 left-0 w-full h-full object-cover opacity-90"
       >
-        <source src="https://videos.pexels.com/video-files/7578544/7578544-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+        <source src="/assets/videos/vid1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
