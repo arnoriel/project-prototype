@@ -137,11 +137,6 @@ const Product = () => {
                             className="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-700"></div>
-                        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-700">
-                            <button className="w-full bg-black text-white py-4 text-[10px] uppercase tracking-widest hover:bg-neutral-800 transition-colors">
-                                Add to Cart
-                            </button>
-                        </div>
                     </div>
 
                     <div className="space-y-3 px-1">
