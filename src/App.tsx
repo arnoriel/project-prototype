@@ -3,8 +3,6 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
-import NewsletterModal from './components/NewsletterModal';
-import QRScanModal from './components/QRScanModal';
 
 // Pages
 import Home from './pages/Home';
@@ -32,10 +30,6 @@ function App() {
   return (
     <Router>
       <div className="relative p-0 m-0 bg-white">
-        
-        <NewsletterModal />
-        <QRScanModal />
-        
         <Navbar 
             onSidebarToggle={handleSidebarToggle} 
             isScrolledToFooter={isScrolledToFooter}
