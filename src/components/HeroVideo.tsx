@@ -21,6 +21,7 @@ const HeroVideo: React.FC = () => {
         <h1 className="text-4xl md:text-7xl font-serif mb-6 md:mb-4 tracking-widest text-shadow leading-tight">
             NEW COLLECTION
         </h1>
+        <p className="mb-6">Rattan reed diffuser sticks are a natural and effective choice for companies looking to incorporate sustainable elegance into their product line or workspace.</p>
         <button className="border border-white px-6 py-3 md:px-8 md:py-3 text-xs md:text-sm uppercase tracking-widest hover:bg-white hover:text-black transition duration-300">
           Discover
         </button>
