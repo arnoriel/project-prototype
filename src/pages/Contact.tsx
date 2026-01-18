@@ -22,7 +22,7 @@ const Contact = () => {
                     </div>
                     <div className="group cursor-pointer">
                         <div className="text-[10px] uppercase tracking-[0.3em] text-gray-400 mb-2 group-hover:text-black transition-colors">Digital Inquiry</div>
-                        <p className="text-sm font-medium">hello@decohome.id</p>
+                        <p className="text-sm font-medium">hello@SAFGO.id</p>
                         <p className="text-sm font-medium">+62 812 3456 7890</p>
                     </div>
                     <div>

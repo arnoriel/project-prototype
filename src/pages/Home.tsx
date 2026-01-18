@@ -17,6 +17,7 @@ const SECTIONS = [
   { id: 'modern', title: 'MODERN LIVING' },
   { id: 'kitchen', title: 'KITCHEN & DINING' },
   { id: 'decor', title: 'DECORATION' },
+  { id: 'stick', title: 'STICKS' },
   { id: 'footer', title: 'CUSTOMER CARE' },
 ];
 
@@ -77,6 +78,7 @@ const Home: React.FC<HomeProps> = ({ setScrolledToFooter }) => {
         <ProductSection title={SECTIONS[2].title} subtitle="Timeless furniture pieces" imageLeft="/assets/img/3.jpeg" imageRight="/assets/img/4.jpeg" />
         <ProductSection title={SECTIONS[3].title} subtitle="Handcrafted tableware" imageLeft="/assets/img/5.jpeg" imageRight="/assets/img/6.jpeg" />
         <ProductSection title={SECTIONS[4].title} subtitle="Unique artifacts and scents" imageLeft="/assets/img/1.jpeg" imageRight="/assets/img/3.jpeg" />
+        <ProductSection title={SECTIONS[5].title} subtitle="Reed Diffuser Sticks" imageLeft="/assets/img/7.jpeg" imageRight="/assets/img/8.jpeg" />
         <Footer /> 
       </div>
       

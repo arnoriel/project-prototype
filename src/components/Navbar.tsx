@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSidebarToggle, isScrolledToFooter = f
       >
         <div className="flex justify-between items-center mb-12 mt-1">
             <div className="font-serif text-2xl md:text-3xl font-bold tracking-widest text-black">
-              DECOHOME
+              SAFGO
             </div>
             <button onClick={closeSidebar} className="md:hidden text-black p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -90,7 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSidebarToggle, isScrolledToFooter = f
           )}
           {!isSidebarOpen && (
             <Link to="/" className={`text-xl md:text-2xl font-serif font-bold tracking-wider transition-colors duration-500 ${textColorClass}`}>
-                DECOHOME
+                SAFGO
             </Link>
           )}
         </div>

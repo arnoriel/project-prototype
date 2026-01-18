@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
       
       {/* 3. Bottom */}
       <div className="w-full max-w-5xl flex flex-col md:flex-row justify-between items-center md:items-end text-[10px] md:text-xs text-gray-400 uppercase tracking-wider pt-6 md:pt-8 pb-4 gap-2">
-        <span>© 2025 DECOHOME</span>
+        <span>© 2025 SAFGO</span>
         <span>INDONESIA / ENGLISH</span>
       </div>
 
