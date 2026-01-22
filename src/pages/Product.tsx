@@ -2,10 +2,10 @@ import { useState, useMemo, useRef, useEffect } from 'react';
 import Footer from '../components/Footer';
 
 const products = [
-  { id: 1, name: "Linen Bed Sheet Set", price: 1200000, material: "100% Belgian Linen", img: "/assets/img/1.jpeg", category: "Bedroom" },
-  { id: 2, name: "Minimalist Ceramic Vase", price: 450000, material: "Hand-thrown Clay", img: "/assets/img/2.jpeg", category: "Decor" },
-  { id: 3, name: "Oak Lounge Chair", price: 3500000, material: "Solid White Oak", img: "/assets/img/3.jpeg", category: "Living" },
-  { id: 4, name: "Handcrafted Dining Table", price: 2800000, material: "Reclaimed Teak", img: "/assets/img/4.jpeg", category: "Dining" },
+  { id: 1, name: "PEREJA Reed Diffuser Oda Kokusu Powder/Pudra", price: 1200000, material: "100% Belgian Linen", img: "/assets/products/fruta_1.jpeg", category: "Bedroom" },
+  { id: 2, name: "Fruta Tropical", price: 450000, material: "Hand-thrown Clay", img: "/assets/products/fruta_2.jpeg", category: "Decor" },
+  { id: 3, name: "Fruta Tropical", price: 3500000, material: "Solid White Oak", img: "/assets/products/fruta_3.jpeg", category: "Living" },
+  { id: 4, name: "Fruta Tropical", price: 2800000, material: "Reclaimed Teak", img: "/assets/products/fruta_4.jpeg", category: "Dining" },
   { id: 5, name: "Nero Marble Coaster", price: 150000, material: "Italian Marble", img: "/assets/img/5.jpeg", category: "Kitchen" },
   { id: 6, name: "Botanical Scented Candle", price: 290000, material: "Soy Wax", img: "/assets/img/6.jpeg", category: "Decor" },
   { id: 7, name: "Abstract Wall Art", price: 850000, material: "Canvas", img: "/assets/img/1.jpeg", category: "Decor" },
