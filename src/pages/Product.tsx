@@ -2,21 +2,19 @@ import { useState, useMemo, useRef, useEffect } from 'react';
 import Footer from '../components/Footer';
 
 const products = [
-  { id: 1, name: "PEREJA Reed Diffuser Oda Kokusu Powder/Pudra", price: 1200000, material: "100% Belgian Linen", img: "/assets/products/fruta_1.jpeg", category: "Bedroom" },
-  { id: 2, name: "Fruta Tropical", price: 450000, material: "Hand-thrown Clay", img: "/assets/products/fruta_2.jpeg", category: "Decor" },
-  { id: 3, name: "Fruta Tropical", price: 3500000, material: "Solid White Oak", img: "/assets/products/fruta_3.jpeg", category: "Living" },
-  { id: 4, name: "Fruta Tropical", price: 2800000, material: "Reclaimed Teak", img: "/assets/products/fruta_4.jpeg", category: "Dining" },
-  { id: 5, name: "Nero Marble Coaster", price: 150000, material: "Italian Marble", img: "/assets/img/5.jpeg", category: "Kitchen" },
-  { id: 6, name: "Botanical Scented Candle", price: 290000, material: "Soy Wax", img: "/assets/img/6.jpeg", category: "Decor" },
-  { id: 7, name: "Abstract Wall Art", price: 850000, material: "Canvas", img: "/assets/img/1.jpeg", category: "Decor" },
-  { id: 8, name: "Rattan Armchair", price: 2200000, material: "Natural Rattan", img: "/assets/img/2.jpeg", category: "Living" },
+  { id: 1, name: "PEREJA Reed Diffuser Oda Kokusu Powder/Pudra", material: "100% Belgian Linen", img: "/assets/products/fruta_1.jpeg", category: "Bedroom" },
+  { id: 2, name: "Fruta Tropical", material: "Hand-thrown Clay", img: "/assets/products/fruta_2.jpeg", category: "Decor" },
+  { id: 3, name: "Fruta Tropical", material: "Solid White Oak", img: "/assets/products/fruta_3.jpeg", category: "Living" },
+  { id: 4, name: "Fruta Tropical", material: "Reclaimed Teak", img: "/assets/products/fruta_4.jpeg", category: "Dining" },
+  { id: 5, name: "Nero Marble Coaster", material: "Italian Marble", img: "/assets/img/5.jpeg", category: "Kitchen" },
+  { id: 6, name: "Botanical Scented Candle", material: "Soy Wax", img: "/assets/img/6.jpeg", category: "Decor" },
+  { id: 7, name: "Abstract Wall Art", material: "Canvas", img: "/assets/img/1.jpeg", category: "Decor" },
+  { id: 8, name: "Rattan Armchair", material: "Natural Rattan", img: "/assets/img/2.jpeg", category: "Living" },
 ];
 
 const sortOptions = [
   { id: 'default', label: 'Featured' },
   { id: 'name', label: 'Alphabetical (A-Z)' },
-  { id: 'price-low', label: 'Price: Low to High' },
-  { id: 'price-high', label: 'Price: High to Low' },
 ];
 
 const Product = () => {
@@ -46,11 +44,7 @@ const Product = () => {
     if (activeCategory !== "All") {
       result = result.filter(p => p.category === activeCategory);
     }
-    if (sortOption.id === "price-low") {
-      result.sort((a, b) => a.price - b.price);
-    } else if (sortOption.id === "price-high") {
-      result.sort((a, b) => b.price - a.price);
-    } else if (sortOption.id === "name") {
+    if (sortOption.id === "name") {
       result.sort((a, b) => a.name.localeCompare(b.name));
     }
     return result;
@@ -60,12 +54,6 @@ const Product = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredAndSortedProducts.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredAndSortedProducts.length / itemsPerPage);
-
-  const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('id-ID', {
-      style: 'currency', currency: 'IDR', minimumFractionDigits: 0,
-    }).format(price).replace("Rp", "Rp ");
-  };
 
   return (
     <div className="pt-24 md:pt-32 min-h-screen flex flex-col justify-between bg-white">
@@ -145,7 +133,6 @@ const Product = () => {
                                 <h3 className="font-serif text-lg text-black leading-tight mb-1">{item.name}</h3>
                                 <p className="text-[10px] text-gray-400 uppercase tracking-widest">{item.material}</p>
                             </div>
-                            <span className="text-sm font-light text-gray-800">{formatPrice(item.price)}</span>
                         </div>
                         <div className="pt-2 border-t border-gray-50 flex justify-end">
                             <p className="text-[9px] text-gray-300 uppercase tracking-widest italic">{item.category}</p>
